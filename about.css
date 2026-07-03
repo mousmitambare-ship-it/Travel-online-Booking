@@ -1,0 +1,106 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY BACKGROUND (same dark gradient) */
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  padding: 40px;
+}
+
+/* MAIN TITLE */
+.about h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+/* DESCRIPTION */
+.desc {
+  text-align: center;
+  color: #dfe6e9;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+/* CARD CONTAINER */
+.cards {
+  display: flex;
+  flex-direction: column; 
+  gap: 25px;
+  align-items: center;
+}
+
+/* CARD STYLE (main design) */
+.card {
+  width: 80%;
+  background: #dcdde1;
+  padding: 20px 30px;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+/* LEFT BLUE LINE */
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10%;
+  height: 80%;
+  width: 6px;
+  background: #00c3ff;
+  border-radius: 10px;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+  transform: translateX(10px);
+}
+
+/* TEXT */
+.card h2 {
+  color: #2f3640;
+  margin-bottom: 10px;
+}
+
+.card p,
+.card ul li {
+  color: #2f3640;
+  font-size: 15px;
+}
+
+/* REMOVE BULLETS */
+.card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* STATS SECTION (optional keep or remove) */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.box {
+  background: #2a9deb;
+  color: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 180px;
+  text-align: center;
+}
+
+.box h2 {
+  font-size: 28px;
+}

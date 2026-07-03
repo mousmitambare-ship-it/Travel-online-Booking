@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #0d1b2a;
+  color: white;
+}
+
+nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #00b4d8;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957');
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.hero h1 {
+  font-size: 50px;
+}
+
+.btn {
+  background: #00b4d8;
+  padding: 12px 25px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/*/* FEATURES */
+.features {
+  text-align: center;
+  padding: 50px;
+}
+
+.feature-box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #e0f7fa;
+  padding: 20px;
+  border-radius: 15px;
+  width: 200px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* OFFERS */
+.offers {
+  background: #caf0f8;
+  text-align: center;
+  padding: 50px;
+}
+
+.offer-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.offer {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 180px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ROUTES */
+/* UPDATED ROUTES DESIGN */
+.route-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.route-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.route-card:hover {
+  transform: translateY(-10px);
+}
+
+.route-card h3 {
+  margin-bottom: 10px;
+}
+
+.route-card p {
+  margin: 5px 0;
+}
+
+/* TAGS */
+.tag {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: white;
+}
+
+.trending {
+  background: #ff5733;
+}
+
+.scenic {
+  background: #28a745;
+}
+
+.fast {
+  background: #ffc107;
+  color: black;
+}
+
+.budget {
+  background: #0077b6;
+}
+
+/* RATING */
+.rating {
+  text-align: center;
+  padding: 50px;
+}
+
+#stars {
+  font-size: 25px;
+  margin: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  background: #00b4d8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0077b6;
+}
+footer {
+  background: #0d1b2a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
