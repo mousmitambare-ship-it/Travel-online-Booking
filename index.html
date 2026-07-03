@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bus Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">BusGo</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="auth.html">Login/Signup</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Book Your Bus Ticket </h1>
+  <p>Fast • Secure • Affordable</p>
+  <a href="booking.html" class="btn">Book Now</a>
+</section>
+
+<section class="features">
+  <h2>Why Choose Us</h2>
+
+  <div class="feature-box">
+    <div class="card">
+      <h3>🚀 Easy Booking</h3>
+      <p>Book tickets in just 2 clicks with simple steps.</p>
+    </div>
+
+    <div class="card">
+      <h3>🛡 Safe Travel</h3>
+      <p>Verified buses with safety and hygiene standards.</p>
+    </div>
+
+    <div class="card">
+      <h3>💰 Best Prices</h3>
+      <p>Get lowest fares with exciting discounts.</p>
+    </div>
+  </div>
+</section>
+
+<section class="offers">
+  <h2>🎉 Special Offers</h2>
+
+  <div class="offer-cards">
+    <div class="offer">
+      <h3>First Booking</h3>
+      <p>Flat 20% OFF</p>
+    </div>
+
+    <div class="offer">
+      <h3>Weekend Deal</h3>
+      <p>Up to 30% OFF</p>
+    </div>
+
+    <div class="offer">
+      <h3>Student Offer</h3>
+      <p>Extra 10% Discount</p>
+    </div>
+  </div>
+</section>
+
+<section class="routes">
+  <h2>🗺 Popular Routes</h2>
+
+  <div class="route-container">
+
+    <div class="route-card">
+      <h3>Nagpur → Pune</h3>
+      <p>💸 ₹700 | ⏱ 12 hrs</p>
+      <span class="tag trending">🔥 Trending</span>
+      <button onclick="bookRoute('Nagpur','Pune',700)">Book Now</button>
+    </div>
+
+    <div class="route-card">
+      <h3>Mumbai → Goa</h3>
+      <p>💸 ₹1200 | ⏱ 10 hrs</p>
+      <span class="tag scenic">🏞 Scenic</span>
+      <button onclick="bookRoute('Mumbai','Goa',1200)">Book Now</button>
+    </div>
+
+    <div class="route-card">
+      <h3>Delhi → Jaipur</h3>
+      <p>💸 ₹500 | ⏱ 5 hrs</p>
+      <span class="tag fast">⚡ Fastest</span>
+      <button onclick="bookRoute('Delhi','Jaipur',500)">Book Now</button>
+    </div>
+
+    <div class="route-card">
+      <h3>Hyderabad → Bangalore</h3>
+      <p>💸 ₹800 | ⏱ 9 hrs</p>
+      <span class="tag budget">💰 Budget</span>
+      <button onclick="bookRoute('Hyderabad','Banglore',800)">Book Now</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="rating">
+  <h2>⭐ User Ratings</h2>
+
+  <div id="stars">⭐⭐⭐⭐☆</div>
+  <button onclick="refreshRating()">Refresh Rating</button>
+</section>
+
+<footer>
+  <p>📞 9876543210 | 📧 support@busgo.com</p>
+</footer>
+
+<script>
+function refreshRating() {
+  const ratings = ["⭐⭐⭐⭐⭐","⭐⭐⭐⭐☆","⭐⭐⭐☆☆","⭐⭐⭐⭐⭐"];
+  document.getElementById("stars").innerText =
+    ratings[Math.floor(Math.random()*ratings.length)];
+}
+function bookRoute(from, to, price) {
+  localStorage.setItem("fromCity", from);
+  localStorage.setItem("toCity", to);
+  localStorage.setItem("basePrice", price);
+
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>

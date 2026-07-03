@@ -1,0 +1,35 @@
+body {
+  background: linear-gradient(to right, #141e30, #243b55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial;
+}
+
+.box {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 400px;
+  text-align: center;
+}
+
+h2 {
+  color: green;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 10px;
+  font-size: 18px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
